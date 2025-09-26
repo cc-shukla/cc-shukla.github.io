@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCenter Pro</title>
+    <meta name="description" content="Get in touch with TechCenter Pro for all your computer service needs. Professional support and consultation available.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="home.html" class="logo">
+                    <i class="fas fa-desktop"></i> TechCenter Pro
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="home.html" class="nav-link" data-translate="home">Home</a></li>
+                    <li><a href="services.html" class="nav-link" data-translate="services">Services</a></li>
+                    <li><a href="education.html" class="nav-link" data-translate="education">Education</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="about">About</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-translate="contact">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-toggle">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="hi">हिं</button>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="breadcrumb">
+                    <a href="home.html" data-translate="home">Home</a> / <span data-translate="contact">Contact</span>
+                </div>
+                <h1 data-translate="contactTitle">Get In Touch</h1>
+                <p data-translate="contactDesc">Ready to help with all your computer needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="contact-info-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our experts</p>
+                    <div class="contact-details">
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                        <a href="tel:+919876543211">+91 98765 43211</a>
+                    </div>
+                    <small>Mon-Sat: 9:00 AM - 8:00 PM</small>
+                </div>
+
+                <div class="contact-info-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us your queries anytime</p>
+                    <div class="contact-details">
+                        <a href="mailto:info@techcenterpro.com">info@techcenterpro.com</a>
+                        <a href="mailto:support@techcenterpro.com">support@techcenterpro.com</a>
+                    </div>
+                    <small>We respond within 24 hours</small>
+                </div>
+
+                <div class="contact-info-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Come to our service center</p>
+                    <div class="contact-details">
+                        <address>
+                            123 Tech Street<br>
+                            Digital City, State 110001<br>
+                            India
+                        </address>
+                    </div>
+                    <small>Free parking available</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" style="background: var(--secondary-navy);">
+        <div class="container">
+            <div class="contact-form-section">
+                <div class="form-header text-center mb-xl">
+                    <h2 class="fade-in">Send Us a Message</h2>
+                    <p class="fade-in">Fill out the form below and we'll get back to you as soon as possible</p>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form fade-in" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="computer-repair">Computer Repair</option>
+                                <option value="hardware-upgrade">Hardware Upgrade</option>
+                                <option value="software-installation">Software Installation</option>
+                                <option value="virus-removal">Virus Removal</option>
+                                <option value="data-recovery">Data Recovery</option>
+                                <option value="computer-education">Computer Education</option>
+                                <option value="it-support">IT Support</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency">
+                                <option value="normal">Normal (2-3 days)</option>
+                                <option value="urgent">Urgent (Same day)</option>
+                                <option value="emergency">Emergency (Within hours)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe your issue or requirements in detail..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for tech tips and updates
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a> *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+        <div class="container">
+            <div class="map-section">
+                <div class="map-header text-center mb-xl">
+                    <h2 class="fade-in">Find Our Location</h2>
+                    <p class="fade-in">Visit our service center for in-person consultation and support</p>
+                </div>
+
+                <div class="map-container fade-in">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Interactive Map</h3>
+                        <p>123 Tech Street, Digital City</p>
+                        <div class="map-actions">
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-directions"></i>
+                                Get Directions
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--secondary-navy);">
+        <div class="container">
+            <div class="faq-section">
+                <div class="text-center mb-xl">
+                    <h2 class="fade-in">Frequently Asked Questions</h2>
+                    <p class="fade-in">Quick answers to common questions about our services</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item fade-in">
+                        <h4><i class="fas fa-question-circle"></i> What are your service hours?</h4>
+                        <p>We're open Monday through Saturday from 9:00 AM to 8:00 PM. Emergency services are available 24/7 for critical issues.</p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h4><i class="fas fa-question-circle"></i> Do you provide on-site services?</h4>
+                        <p>Yes, we offer on-site computer repair and IT support services for homes and businesses within a 25km radius of our center.</p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h4><i class="fas fa-question-circle"></i> What payment methods do you accept?</h4>
+                        <p>We accept cash, all major credit/debit cards, UPI payments, and bank transfers. Payment is due upon completion of service.</p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h4><i class="fas fa-question-circle"></i> Do you offer warranties on repairs?</h4>
+                        <p>Yes, all our repair services come with a 30-90 day warranty depending on the type of repair. Parts are covered by manufacturer warranty.</p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h4><i class="fas fa-question-circle"></i> Can you recover deleted data?</h4>
+                        <p>We offer professional data recovery services for various storage devices. Success rates vary depending on the type and extent of data loss.</p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h4><i class="fas fa-question-circle"></i> Do you provide computer training?</h4>
+                        <p>Yes, we offer comprehensive computer education programs for beginners to advanced users, including Microsoft Office, programming, and digital literacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="section emergency-contact">
+        <div class="container">
+            <div class="emergency-content text-center">
+                <h2 class="fade-in">Need Emergency Support?</h2>
+                <p class="fade-in">Critical computer issues? We're here to help 24/7</p>
+                
+                <div class="emergency-features fade-in">
+                    <div class="emergency-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Emergency Support</span>
+                    </div>
+                    <div class="emergency-feature">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Immediate Response</span>
+                    </div>
+                    <div class="emergency-feature">
+                        <i class="fas fa-tools"></i>
+                        <span>On-Site Service Available</span>
+                    </div>
+                </div>
+
+                <div class="emergency-contact fade-in">
+                    <a href="tel:+91 88581 31008" class="btn btn-warning btn-large">
+                        <i class="fas fa-phone"></i>
+                        Call Emergency Line: +91 88581 31008
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechCenter Pro</h3>
+                    <p>Your trusted partner for all computer solutions. Professional services since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-translate="quickLinks">Quick Links</h3>
+                    <a href="home.html" data-translate="home">Home</a>
+                    <a href="services.html" data-translate="services">Services</a>
+                    <a href="education.html" data-translate="education">Education</a>
+                    <a href="about.html" data-translate="about">About</a>
+                    <a href="contact.html" data-translate="contact">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-translate="ourServices">Our Services</h3>
+                    <a href="services.html">Computer Repair</a>
+                    <a href="services.html">Hardware Upgrade</a>
+                    <a href="services.html">Software Installation</a>
+                    <a href="education.html">Computer Training</a>
+                    <a href="services.html">IT Consulting</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-translate="contactInfo">Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 88581 31008</p>
+                    <p><i class="fas fa-envelope"></i> shuklaanurag626@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tulapur, Kachhawa Mirzapur UP</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-8PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shukla. <span data-translate="allRightsReserved">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+        <a href="#" class="contact-btn whatsapp-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel: +918858131008" class="contact-btn phone-btn" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
